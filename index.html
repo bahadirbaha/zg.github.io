@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZG Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-page">
+        <h1 id="clickable-text">ZG Bana Tıkla</h1>
+    </div>
+
+    <div class="buttons-page" id="buttons-page" style="display: none;">
+        <button class="modern-button" onclick="openSurprise(1)">Supriz 1</button>
+        <button class="modern-button" onclick="openSurprise(2)">Supriz 2</button>
+        <button class="modern-button" onclick="openSurprise(3)">Supriz 3</button>
+        <button class="modern-button" onclick="openSurprise(4)">Supriz 4</button>
+        <button class="modern-button" onclick="openSurprise(5)">Supriz 5</button>
+    </div>
+
+    <div class="surprise-page" id="surprise-page" style="display: none;">
+        <h2 id="surprise-text"></h2>
+        <button class="back-button" onclick="goBack()">Geri dön ve başka bir seçenek seç</button>
+    </div>
+
+    <div class="congrats-page" id="congrats-page" style="display: none;">
+        <h2>Tebrikler ZG'nin tüm güzel yerlerini gördünüz</h2>
+        <button class="back-button" onclick="restart()">Başa dön ve ZG'yi yeniden keşfet</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
